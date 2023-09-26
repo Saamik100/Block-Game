@@ -1,0 +1,121 @@
+body{
+  
+    background-color: yellow;
+}
+
+#Game{
+    width: 1315px;
+    height: 700px;
+    border: 10px solid black;   
+    margin: auto; 
+    background-color: green;
+    margin-top: 45px;
+}
+h1{
+color: blue;
+text-align: center;
+}
+#character{
+    width: 80px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    top: 0px;
+   left: 25px;
+   z-index: 8;
+}
+#charsacter{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+
+}
+
+.jump{
+    animation-name: jump;
+    animation-duration: 1.5s;
+}
+
+
+@keyframes jump{
+    0%{top: 0px;}
+    50%{top: -150px}
+    100%{top: 0px;}
+}
+
+.Button{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin-left: 550px;
+    font-size: 40px;
+}
+.Button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#Back{
+    width: 80px;
+    height: 80px;
+}
+#Back:hover{
+
+    cursor: pointer;
+}
+
+h4{
+    width: 1000px;
+    text-align: center;
+    margin-left: 200px;
+    font-size: 40px;
+}
+#Score{
+    margin-top: -90px;
+}
+#enemysh{
+    width: 100px;
+    height: 70px;
+ margin-top: -50px;
+    left: 1100px;
+    position: relative;
+    z-index: 12;
+}
+
+#enemt{
+    width: 100px;
+    height: 70px;
+    z-index: 13;
+}
+
+
+.enemies{
+    animation-name: enemies;
+    animation-duration: 2s;
+}
+.bozos{
+    animation-name: enemies;
+    animation-duration: 1s;
+}
+
+
+@keyframes enemies{
+ 0%{left: 1100px}
+ 100%{left: -200px}
+}
+#enemyedsh{
+    width: 170px;
+    height: 30px;
+    left: 1100px;
+    z-index: 10;
+    position:relative;
+    margin-top: 550px;
+
+}#enemyedd{
+    width: 170px;
+    height: 30px;
+    z-index: 11;
+
+}
